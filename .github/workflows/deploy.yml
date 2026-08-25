@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
-            cd /var/www/drawing-board
+            cd /home/ubuntu/drawing-board
             git fetch origin
             git reset --hard origin/main
             sudo systemctl reload nginx
